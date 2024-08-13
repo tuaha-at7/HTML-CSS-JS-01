@@ -1,0 +1,233 @@
+<!DOCTYPE >
+<html>
+  <head>
+    <title>Registration form</title>
+    <style>
+      .white {
+        width: 700px;
+        height: 500px;
+        border-radius: 8px;
+        margin-left: 240px;
+        margin-top: 50;
+        padding-top: 35px;
+        padding-left: 50px;
+        background-color: #f7f7f7;
+      }
+      .heading {
+        font-size: 19px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: -20px;
+      }
+      .fname {
+        color: rgb(134, 133, 133);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 164px;
+        left: 280px;
+      }
+      #fname {
+        width: 240;
+        height: 40px;
+        position: absolute;
+        border-color: rgb(255, 254, 254);
+        background-color: #fffefa;
+        border-width: 1.5px;
+        border-radius: 5px;
+        top: 180;
+        left: 280;
+      }
+
+      .lname {
+        color: rgb(134, 133, 133);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 164px;
+        left: 680px;
+      }
+      #lname {
+        width: 240;
+        height: 40px;
+        position: absolute;
+        border-color: rgb(255, 254, 254);
+        background-color: #fffefa;
+        border-width: 1.5px;
+        border-radius: 5px;
+        top: 180;
+        left: 680;
+      }
+
+      .birthday {
+        color: rgb(134, 133, 133);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 239px;
+        left: 280px;
+      }
+      #birthday {
+        width: 240;
+        height: 40px;
+        position: absolute;
+        border-color: rgb(255, 254, 254);
+        background-color: #fffefa;
+        border-width: 1.5px;
+        border-radius: 5px;
+        top: 255;
+        left: 280;
+      }
+
+      .email {
+        color: rgb(134, 133, 133);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 314px;
+        left: 280px;
+      }
+      #email {
+        width: 240;
+        height: 40px;
+        position: absolute;
+        border-color: rgb(255, 254, 254);
+        background-color: #fffefa;
+        border-width: 1.5px;
+        border-radius: 5px;
+        top: 330;
+        left: 280;
+      }
+
+      .phone {
+        color: rgb(134, 133, 133);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 314px;
+        left: 680px;
+      }
+      #phone {
+        width: 240;
+        height: 40px;
+        position: absolute;
+        border-color: rgb(255, 254, 254);
+        background-color: #fffefa;
+        border-width: 1.5px;
+        border-radius: 5px;
+        top: 330;
+        left: 680;
+      }
+      .gender {
+        color: rgb(134, 133, 133);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        position: absolute;
+        top: 239px;
+        left: 680px;
+      }
+      #male {
+        position: absolute;
+        top: 260px;
+        left: 680;
+        accent-color: #5ec44e;
+        border-color: #5ec44e;
+      }
+      #female {
+        position: absolute;
+        top: 260px;
+        left: 810;
+        accent-color: #5ec44e;
+        border-color: #5ec44e;
+      }
+      .male {
+        color: rgb(114, 113, 113);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 262px;
+        left: 703px;
+      }
+      .female {
+        color: rgb(114, 113, 113);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 262px;
+        left: 833px;
+      }
+      .subject {
+        color: rgb(134, 133, 133);
+        font-size: 13px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: absolute;
+        top: 450px;
+        left: 280px;
+      }
+      .butt {
+        background-color: #3f75d9;
+        width: 135px;
+        height: 35px;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        color: #fffefa;
+        font-size: 15px;
+        position: absolute;
+        top: 530px;
+        left: 280px;
+        border-radius: 5px;
+        border-color: #3f75d9;
+      }
+      .ddm {
+        position: absolute;
+        top: 470px;
+        left: 280px;
+      }
+      #drop {
+        width: 640;
+        height: 40px;
+        border-radius: 5px;
+        border-color: darkgray;
+        border-width: 1px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body style="background-color: #993689">
+    <div class="white">
+      <p class="heading">Registration Form</p>
+      <div>
+        <form style="background-color: aquamarine" id="myform">
+          <label for="fname" class="fname">First Name</label>
+          <input type="text" id="fname" name="fname" required />
+          <label for="lname" class="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" />
+          <label for="birthday" class="birthday">Birthday</label>
+          <input type="date" id="birthday" name="birthday" />
+          <label for="email" class="email">Email</label>
+          <input type="email" id="email" name="email" required/>
+          <label for="phone" class="phone">Phone Number</label>
+          <input type="number" id="phone" name="phone" />
+          <label for="gender" class="gender">Gender</label>
+          <label for="male" class="male">Male</label>
+          <input type="radio" id="male" name="gender" value="m" />
+          <label for="female" class="female">Female</label>
+          <input type="radio" id="female" name="gender" value="fm" />
+          <label for="subject" class="subject">Subject</label>
+          <div class="ddm">
+            <select id="drop">
+              <option>Computer Architecture</option>
+              <option>Computer Infrastructure</option>
+              <option>Machine Architecture</option>
+            </select>
+          </div>
+          <button class="butt" onclick="buttoon()">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="Assignment03p2.js">
+    </script>
+  </body>
+</html>
